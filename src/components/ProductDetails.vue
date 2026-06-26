@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 
 
-const props = defineProps({
+const props2 = defineProps({
     details: {
         type: Array,
         required: true
@@ -11,5 +11,7 @@ const props = defineProps({
 </script>
 
 <template>
-
+        <ul>
+          <li v-for="detail in props2.details">{{ detail }}</li>
+        </ul>
 </template>
